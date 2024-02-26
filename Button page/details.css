@@ -1,0 +1,31 @@
+.detail{
+    display: flex;
+    font-family: 'Montserrat Alternates', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0b0c5f;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 0px 39px;
+    word-spacing: 0.2em;
+    line-height: 1.7;
+    z-index: -3;
+    box-shadow: 2px -3px 10px #8080807d;
+    width: 89vw;
+    position: relative;
+    left:1.5vw;
+    border-radius: 40px;
+    background: rgb(127 255 212 / 66%);
+}
+.yug{
+    text-align: center;
+    color: red;
+    padding-bottom: 27px;
+    text-transform: capitalize;
+
+}
+.line{
+    color: #0b0c5f;
+    
+}

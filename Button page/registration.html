@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifting</title>
+    <link rel="stylesheet" href="registration.css">
+    
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend><b>Registration for Web Accessible Elevator</b> </legend>
+            <div class="registratatin-name">
+                Enter your name
+            </div>
+            <input type="text" name="Enter your name" placeholder="William Smith" id="myname" required><br>
+            <!-- name,file(proof),email,phne no ,reason for urgent registration -->
+            <label for="clgid" class="clgid">Enter your Staff ID <br>
+                <input type="text" name="clgid" placeholder="XXDEPTXXX" id="clgid"><br>
+            </label>
+            <label for="phneno" class="phneno">Enter your mobile number<br>
+                <input type="text" name="phneno" placeholder="+91 " id="phneno" maxlength="10"><br>
+            </label>
+            <label for="email" class="email">Enter your Email id<br>
+                <input type="email" name="email" placeholder="abcd@email.com" id="email" required><br>
+            </label>
+            <div class="button-container">
+                <label for="submit" class="button">
+                    <button onclick="checkIdAndOpenPage()"><b>Click here to submit</b></button>
+                </label><br>
+            </div>
+        </fieldset>
+    </form>
+    
+    <script src="registration.js"></script>
+    
+</body>
+</html>

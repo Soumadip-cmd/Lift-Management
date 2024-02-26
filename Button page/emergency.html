@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Registration page</title>
+   <link rel="stylesheet" href="emergency.css">
+   
+</head>
+<body>
+    <form action="https://formspree.io/f/xbjvoqqr" method="POST">
+    <fieldset>
+    <legend><b>Registration for Web Accessible Elevator</b> </legend>
+    <div class="registratatin-name">
+      <p class="name">
+        Enter your name
+    </p>
+    </div>
+    <input type="text" class="namebox" name="Enter your name"placeholder="William Smith" id="name" required>
+    <!-- name,file(proof),email,phne no ,reason for urgent registration -->
+    <label for="clgid" class="clgid">
+    <p class="id">
+        Enter your Staff ID (Optional)
+    </p>
+        <input type="text"class="id-input"name="Your ID No" placeholder="XXDEPTXXX"id="clgid" ><br>
+    </label>
+    <label for="phneno" class="phneno">
+        <p class="phneno">
+        Enter your mobile number
+        </p>
+        <input type="tel" class = "phneno input "name="Contact No" onkeyup="val(this)" placeholder="+91 "id="phneno" required >
+        <div id="res"> </div>  <!-- validation box -->
+    </label>
+    <label for="email" class="email">
+       <p class="email"> Enter your Email id</p>
+        <input  type="email" class = "email-input"name="Email"onkeyup="validate()" placeholder="abcd@email.com"id="email" required>
+        <div id ="emailRes"></div>
+    </label>
+    <label for="reason" class="reason">
+        <p class="reason">Enter your reason for registration</p>
+        <textarea name="Reason for registration"class="reason" placeholder=""id="reason" oninput="limitWordCount(this, 50)" required>
+    </textarea>
+    <label for="floor" class="floor">
+        <p class="floor">Enter your floor no</p>
+        <input type="number" class="floor no" placeholder=" "id="floor" max="5" min="1" required >
+    </label>
+    <span class="proof">
+        <label for="upload" class="file">
+            <p class="file"><b>Upload the document that verified the emergency person </b>
+            </p>
+        </label>
+    <div>
+        <input type="file" class ="upload-proof" name="Upload (proff)"placeholder="Upload Your file here" id="upload"required>
+    </div><br>
+    </span>
+    <span class="proof">
+        <label for="upload" class="file">
+            <p class="file"><b>Upload picture of emergency person[NOTE: at the time of scan only this person is allowed to access the lift]</b>
+            </p>
+        </label>
+    <div>
+        <input type="file" class ="upload-proof" name="Upload (proff)"placeholder="Upload Your file here" id="upload"required>
+    </div><br>
+    </span>
+    
+    
+    <div>
+    <button class="otp" onclick="send_otp()">
+        <p class="otpgenerate">Generate OTP</p></button>
+    </div>
+    
+    
+    
+    
+    
+</fieldset>
+
+</form>
+<script src="emergency.js"></script>
+
+</body>
+</html>

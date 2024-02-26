@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifting</title>
+
+    <link rel="stylesheet" href="elevator.css">
+</head>
+
+<body>
+    <nav class="header container">
+        <ul class="nav_bar">
+            <li class="navbox"><a href="#Home" data-link="Home">Home</a></li>
+            <li class="navbox"><a href="#Elevator" data-link="Elevator">Elevator</a></li>
+            <li class="navbox"><a href="urgent-lift.html" data-link="Registration" onclick="disable()" target="_blank">Emergency</a></li>
+            <li class="navbox"><a href="about.html" target="_blank">About</a></li>
+            <li class="navbox"><a href="#Contact" data-link="Contact">Contact us</a></li>
+        </ul>
+    </nav>
+    <main id="Home">
+        <section>
+
+            <div class="text">
+                <div class="textpart">
+                    <h2>Hello!!</h2>
+                    <h2 id="text_name1" class="text_name typing "></h2>
+
+                    <h2 class="welcome">Welcome To Our Website</h2>
+                </div>
+            </div>
+        </section>
+        <div>
+            <a href="#Elevator" type="button" class="details" data-link="Know More">Know More</a>
+            <a href="details.html" type="button" class="details" target="_blank">Check Details</a>
+
+        </div>
+    </main>
+    <section id="Elevator" class="sec_pos">
+        <div class="lift-container pos">
+            <div class="floors">
+                <button class="floor" onclick="move(5)" id="5th">5th floor</button>
+                <button class="floor" onclick="move(4)" id="4th">4th floor</button>
+                <button class="floor" onclick="move(3)" id="3rd">3rd floor</button>
+                <button class="floor" onclick="move(2)" id="2nd">2nd floor</button>
+                <button class="floor" onclick="move(1)" id="1st">1st floor</button>
+            </div>
+
+            <div class="building">
+                <div class="floor1">5</div>
+                <div class="floor1">4</div>
+                <div class="floor1">3</div>
+                <div class="floor1">2</div>
+                <div class="floor1">1
+                </div>
+            </div>
+            <div class="lift1" id="lift1">Lift</div>
+        </div>
+    </section>
+    <section class="urgent-pos" id="Emergency">
+        <p class="start">do you have any emergency case to access the benefit of Elevator ?..</p>
+        <p class="end">If You have then Clicked Emergency-Registration</p>
+        <div class="btn">
+            <a href="emergency.html" class="btn-outline">Emergency-Registration</a>
+        </div>
+        <p class="end pass">After Emergency-Registration click Emergency on nav-bar</p>
+    </section>
+    <footer>
+        
+    </footer>
+    <script src="Elevator.js"></script>
+
+
+</body>
+
+</html>
